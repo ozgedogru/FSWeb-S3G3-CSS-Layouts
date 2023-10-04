@@ -1,4 +1,77 @@
 /* CSS stillerinizi buraya girin */
-* {
+html {
+  width: 100%;
   box-sizing: border-box;
+  font-family: "Gabarito";
+}
+body {
+  width: 1500px;
+}
+
+header,
+footer {
+  background-color: rgb(228, 116, 96);
+  color: rgb(238, 238, 238);
+  height: 8rem;
+  width: 1500px;
+}
+
+h1 {
+  font-size: 36px;
+  padding: 10px;
+  font-family: "DM Serif Display";
+  font-weight: bold;
+}
+h2 {
+  margin: 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-start;
+}
+nav a {
+  padding: 1rem;
+  border-color: black;
+  background-color: white;
+}
+a {
+  margin: 1rem;
+}
+.section-entri {
+  display: flex;
+  align-items: flex-end;
+  width: 1500px;
+}
+
+#mainimg {
+  width: 700px;
+  margin: 0 auto;
+}
+.entri-right {
+  margin: 1rem;
+  font-size: 30px;
+  text-align: left;
+}
+img {
+  margin: 0 auto;
+  padding: 1rem;
+  width: 335px;
+}
+
+div {
+  display: block;
+}
+div .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+h3 {
+  text-align: center;
+  font-family: "Gabarito";
+}
+footer p {
+  text-align: center;
+  padding-top: 2rem;
 }
