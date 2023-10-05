@@ -1,43 +1,76 @@
 /* CSS stillerinizi buraya girin */
 html {
+  font-size: 15px;
   width: 100%;
   box-sizing: border-box;
   font-family: "Gabarito";
 }
-
+body {
+  padding: 1rem;
+}
+.container {
+  width: 1500px;
+  margin: auto;
+}
 header,
 footer {
-  background-color: rgb(228, 116, 96);
+  background-color: rgb(254, 206, 168);
   color: rgb(238, 238, 238);
   height: 8rem;
   width: 1500px;
+  padding: 2rem;
+  border-radius: 1rem;
 }
 
 h1 {
-  font-size: 36px;
-  padding: 10px;
+  font-size: 2.5rem;
+  color: rgb(42, 54, 59);
   font-family: "DM Serif Display";
   font-weight: bold;
-}
-h2 {
   margin: 1rem;
 }
 
 nav {
   display: flex;
   justify-content: flex-start;
+  margin: 1rem;
+  gap: 0.5rem;
 }
+
 nav a {
+  font-size: 1rem;
+  display: inline-block;
+  margin: 0;
   padding: 1rem;
-  border-color: black;
-  background-color: white;
+  color: white;
+  background-color: rgb(42, 54, 59);
+  text-decoration: none;
+  border-radius: 0.5rem;
+  transition: font-size 0.3s;
 }
+
 a {
   margin: 1rem;
 }
+a:hover,
+button:hover {
+  color: white;
+  background-color: rgb(61, 77, 85);
+}
+button {
+  font-size: 1rem;
+  margin: 0.5rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  color: white;
+  background-color: rgb(42, 54, 59);
+  transition: background-color 0.3s ease-out;
+}
+
 .section-entri {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   width: 1500px;
 }
 
@@ -47,20 +80,19 @@ a {
 }
 .entri-right {
   margin: 5rem;
-  font-size: 30px;
+  font-size: 2rem;
   text-align: left;
   flex-grow: 1;
 }
+
 img {
   margin: 0 auto;
   padding: 1rem;
   width: 335px;
+  border-radius: 1.5rem;
 }
 
-div {
-  display: block;
-}
-div .container {
+.container {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -68,8 +100,24 @@ div .container {
 h3 {
   text-align: center;
   font-family: "Gabarito";
+  margin: 0.5rem;
+  font-size: 1.5rem;
+  color: rgb(42, 54, 59);
 }
-footer p {
+footer,
+p {
   text-align: center;
   padding-top: 2rem;
+  color: rgb(42, 54, 59);
+}
+
+/*Tablet design*/
+
+@media (max-width: 800px) {
+  html {
+    font-size: 20px;
+  }
+  container: {
+    width: 800px;
+  }
 }
