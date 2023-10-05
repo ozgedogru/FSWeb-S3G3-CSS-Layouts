@@ -4,9 +4,6 @@ html {
   box-sizing: border-box;
   font-family: "Gabarito";
 }
-body {
-  width: 1500px;
-}
 
 header,
 footer {
@@ -49,9 +46,10 @@ a {
   margin: 0 auto;
 }
 .entri-right {
-  margin: 1rem;
+  margin: 5rem;
   font-size: 30px;
   text-align: left;
+  flex-grow: 1;
 }
 img {
   margin: 0 auto;
